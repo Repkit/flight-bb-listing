@@ -11,9 +11,8 @@ app.Flight = Backbone.Model.extend({
     'Price': null,
     'Currency': null,
     'Routes': [],
-    'DepartureRoute': {},
+    'DeparturegitRoute': {},
     'ReturnRoute': {},
-  },
-  
+  }
 });
 
