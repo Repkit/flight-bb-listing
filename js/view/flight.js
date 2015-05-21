@@ -7,10 +7,10 @@ var app = app || {};
 // Our flight element view
 
 app.FlightView = Backbone.View.extend({
-  tagName   : 'div',
-  className : 'flight-listing-item row-fluid no-stack',
-  template  : 'flight',
-  prepareJSON: function() {
+  tagName     : 'div',
+  className   : 'flight-listing-item row-fluid no-stack',
+  template    : 'flight',
+  prepareJSON : function() {
     // var date = moment(firstsegment.Origin.Date,'YYYY-MM-DD').format("DD.MM.YYYY");
     var formatDate = function(){
       return function(time){
@@ -21,7 +21,7 @@ app.FlightView = Backbone.View.extend({
       date: date, formatDate:formatDate
     };
         },
-  render    : function(){
+  render      : function(){
     var self = this;
     TemplateManager.get(this.template, function(template){
       // var html = $(template).tmpl();

@@ -8,7 +8,10 @@ var app = app || {};
 
 var Flights = Backbone.Collection.extend({
   model: app.Flight,
-  url: 'api/flights.json'
+  url: 'api/flights.json',
+  parse: function(response){
+    return response;
+  },
 });
 
 app.FlightList = new Flights();
