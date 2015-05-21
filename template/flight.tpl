@@ -1,4 +1,4 @@
-<div class="flight-listing-item row-fluid no-stack">
+<!-- <div class="flight-listing-item row-fluid no-stack"> -->
   <form id="0" name="Form0" method="get" action="/en/flight/flightSearch/select">
     <input type="hidden" id="airservice" name="ResultCode" value="AIR:WS:TRIP:07298b822f91b010688f68ba60ff415e">
     <input type="hidden" id="9a7eb334d9d3e2de81ff9337a96e34ab::00" name="Departure" value="9a7eb334d9d3e2de81ff9337a96e34ab::00">
@@ -157,4 +157,4 @@
     <input type="hidden" name="AllComby" value="00|10::01|10">
   </form>
   <!--book form-->
-</div>
+<!-- </div> -->
