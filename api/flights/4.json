@@ -1,0 +1,845 @@
+{
+    "_links": {
+        "self": {
+            "href": "api/flights/4.json?code=AIR:WS:DCST:5e318f39c4e455caad60af5c203ea48e&page=4"
+        },
+        "first": {
+            "href": "api/flights/1.json?code=AIR:WS:DCST:5e318f39c4e455caad60af5c203ea48e"
+        },
+        "last": {
+            "href": "api/flights/5.json?code=AIR:WS:DCST:5e318f39c4e455caad60af5c203ea48e&page=5"
+        },
+        "next": {
+            "href": "api/flights/5.json?code=AIR:WS:DCST:5e318f39c4e455caad60af5c203ea48e&page=5"
+        }
+    },
+    "_embedded": {
+        "flights": [
+			{
+                "ItineraryCode": "5695ae4dd0224c8be70918335483f8a0:3",
+                "Price": "173.47",
+                "Currency": "USD",
+                "ReturnRoute": {
+                    "Ref": "1",
+                    "Duration": "07:00",
+                    "Hash": "3421303f6a955322c80024ae55e46ea7",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "319",
+                                "_": "Airbus A319"
+                            },
+                            "Flight": {
+                                "Number": "9047",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "12:45:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "13:55:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": {
+                                        "isDestinationAirport": false
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        },
+                        {
+                            "Aircraft": {
+                                "Code": "319",
+                                "_": "Airbus A319"
+                            },
+                            "Flight": {
+                                "Number": "9402",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "18:40:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": "1",
+                                "Time": "19:45:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                },
+                "DepartureRoute": {
+                    "AirportChange": false,
+                    "MultipleAirlines": false,
+                    "Ref": "1",
+                    "Duration": "01:30",
+                    "Hash": "65291502c220624c967ae4fe5a7c1a6e",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "8405",
+                                "Class": "E",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-25",
+                                "Terminal": "1",
+                                "Time": "20:40:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-25",
+                                "Terminal": null,
+                                "Time": "22:10:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                }
+            },
+            {
+                "ItineraryCode": "5695ae4dd0224c8be70918335483f8a0:4",
+                "Price": "173.47",
+                "Currency": "USD",
+                "ReturnRoute": {
+                    "Ref": "2",
+                    "Duration": "07:05",
+                    "Hash": "85a1d75f56635d0e4e79e3a051e2f9d1",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "9051",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "09:10:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "10:20:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": {
+                                        "isDestinationAirport": false
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        },
+                        {
+                            "Aircraft": {
+                                "Code": "319",
+                                "_": "Airbus A319"
+                            },
+                            "Flight": {
+                                "Number": "9404",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "15:10:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": "1",
+                                "Time": "16:15:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                },
+                "DepartureRoute": {
+                    "AirportChange": false,
+                    "MultipleAirlines": false,
+                    "Ref": "0",
+                    "Duration": "01:30",
+                    "Hash": "fb134728e71d9f52ae6ceffe97252daa",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "8407",
+                                "Class": "E",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-25",
+                                "Terminal": "1",
+                                "Time": "09:20:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-25",
+                                "Terminal": null,
+                                "Time": "10:50:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                }
+            },
+            {
+                "ItineraryCode": "5695ae4dd0224c8be70918335483f8a0:5",
+                "Price": "173.47",
+                "Currency": "USD",
+                "ReturnRoute": {
+                    "Ref": "2",
+                    "Duration": "07:05",
+                    "Hash": "85a1d75f56635d0e4e79e3a051e2f9d1",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "9051",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "09:10:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "10:20:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": {
+                                        "isDestinationAirport": false
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        },
+                        {
+                            "Aircraft": {
+                                "Code": "319",
+                                "_": "Airbus A319"
+                            },
+                            "Flight": {
+                                "Number": "9404",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "15:10:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": "1",
+                                "Time": "16:15:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                },
+                "DepartureRoute": {
+                    "AirportChange": false,
+                    "MultipleAirlines": false,
+                    "Ref": "1",
+                    "Duration": "01:30",
+                    "Hash": "65291502c220624c967ae4fe5a7c1a6e",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "8405",
+                                "Class": "E",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-25",
+                                "Terminal": "1",
+                                "Time": "20:40:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-25",
+                                "Terminal": null,
+                                "Time": "22:10:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                }
+            },
+            {
+                "ItineraryCode": "5695ae4dd0224c8be70918335483f8a0:6",
+                "Price": "173.47",
+                "Currency": "USD",
+                "ReturnRoute": {
+                    "Ref": "3",
+                    "Duration": "08:00",
+                    "Hash": "4e55b720bcf4c6058f84978f18e065c1",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "9049",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "08:15:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "09:25:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": {
+                                        "isDestinationAirport": false
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        },
+                        {
+                            "Aircraft": {
+                                "Code": "319",
+                                "_": "Airbus A319"
+                            },
+                            "Flight": {
+                                "Number": "9404",
+                                "Class": "N",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "15:10:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": "1",
+                                "Time": "16:15:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                },
+                "DepartureRoute": {
+                    "AirportChange": false,
+                    "MultipleAirlines": false,
+                    "Ref": "1",
+                    "Duration": "01:30",
+                    "Hash": "65291502c220624c967ae4fe5a7c1a6e",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "8405",
+                                "Class": "E",
+                                "NumberOfSeats": "9",
+                                "Meal": null
+                            },
+                            "Origin": {
+                                "Date": "2015-06-25",
+                                "Terminal": "1",
+                                "Time": "20:40:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-25",
+                                "Terminal": null,
+                                "Time": "22:10:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                }
+            },
+            {
+                "ItineraryCode": "b45bad57ffe22465f01a80e9d62cedae:0",
+                "Price": "174.73",
+                "Currency": "USD",
+                "ReturnRoute": {
+                    "Ref": "0",
+                    "Duration": "13:25",
+                    "Hash": "c2d96060ec5a1e1665a860c1052209ce",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "9041",
+                                "Class": "N",
+                                "NumberOfSeats": "4",
+                                "Meal": "SNACK OR BRUNCH"
+                            },
+                            "Origin": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "18:55:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-26",
+                                "Terminal": null,
+                                "Time": "20:05:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": {
+                                        "isDestinationAirport": false
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        },
+                        {
+                            "Aircraft": {
+                                "Code": "CR9",
+                                "_": "Canadair Regional Jet 900"
+                            },
+                            "Flight": {
+                                "Number": "9408",
+                                "Class": "N",
+                                "NumberOfSeats": "4",
+                                "Meal": "SNACK OR BRUNCH"
+                            },
+                            "Origin": {
+                                "Date": "2015-06-27",
+                                "Terminal": null,
+                                "Time": "07:15:00",
+                                "Airport": {
+                                    "Code": "DUS",
+                                    "City": "Dusseldorf",
+                                    "_": "Dusseldorf",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-27",
+                                "Terminal": "1",
+                                "Time": "08:20:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                },
+                "DepartureRoute": {
+                    "AirportChange": false,
+                    "MultipleAirlines": false,
+                    "Ref": "0",
+                    "Duration": "01:30",
+                    "Hash": "516344c1f3c04d87498d45db685fde73",
+                    "ItineraryCode": null,
+                    "Segment": [
+                        {
+                            "Aircraft": {
+                                "Code": "320",
+                                "_": "Airbus A320-100/200"
+                            },
+                            "Flight": {
+                                "Number": "8407",
+                                "Class": "E",
+                                "NumberOfSeats": "4",
+                                "Meal": "SNACK OR BRUNCH"
+                            },
+                            "Origin": {
+                                "Date": "2015-06-25",
+                                "Terminal": "1",
+                                "Time": "09:20:00",
+                                "Airport": {
+                                    "Code": "CDG",
+                                    "City": "Paris",
+                                    "_": "Charles De Gaulle",
+                                    "_data": []
+                                }
+                            },
+                            "Destination": {
+                                "Date": "2015-06-25",
+                                "Terminal": null,
+                                "Time": "10:50:00",
+                                "Airport": {
+                                    "Code": "TXL",
+                                    "City": "Berlin",
+                                    "_": "Tegel",
+                                    "_data": {
+                                        "isDestinationAirport": true
+                                    }
+                                }
+                            },
+                            "Carrier": {
+                                "Marketing": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                },
+                                "Operating": {
+                                    "Code": "4U",
+                                    "_": "Germanwings"
+                                }
+                            },
+                            "Secured": false
+                        }
+                    ]
+                }
+            }
+            
+		]
+    },
+    "page_count": 5,
+    "page_size": 5,
+    "total_items": 25,
+    "page": 4
+}
