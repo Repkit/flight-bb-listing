@@ -12,6 +12,7 @@ app.FlightsView = Backbone.View.extend({
   template      : 'flights',
   initialize    : function(initialFligths){
     this.collection = new app.FlightCollection(initialFligths);
+    this.collection.fetch();
     this.render();
   },
   prepareJSON   : function(){
