@@ -6,21 +6,29 @@ var app = app || {};
 // -------------
 // Our flights view list
 
-app.FlightListView = Backbone.View.extend({
-  tagName     : 'div',
-  className   : 'flight-listing-list',
-  template    : 'flights',
-  prepareJSON : function(){
+app.FlightsView = Backbone.View.extend({
+  tagName       : 'div',
+  className     : 'flight-listing-list',
+  template      : 'flights',
+  initialize    : function(initialFligths){
+    this.collection = new app.FlightCollection(initialFligths);
+    this.render();
+  },
+  prepareJSON   : function(){
     return {};
   },
-  render      : function(){
-    var self = this;
-    TemplateManager.get(this.template, function(template){
-      // var html = $(template).tmpl();
-      var html = template(self.prepareJSON());
-      // $(self.explorerDiv).append(html);
-      self.$el.html(html);
-    });
+  render        : function(){
+    this.collection.each(function(flight){
+      this.renderFlight(flight);
+    },this);
+    
     return this;
+  },
+  renderFlight  : function(flight){
+    var flightView = new app.FlightsView({
+      model : flight
+    });
+    
+    this.$el.append(flightView.render().el);
   }
 });

@@ -6,7 +6,8 @@ var app = app || {};
 // ------------------
 // Our flights collection
 
-var Flights = Backbone.Collection.extend({
+// var Flights = Backbone.Collection.extend({
+app.FlightCollection = Backbone.Collection.extend({
   model: app.Flight,
   url: 'api/flights.json',
   parse: function(response){
@@ -14,4 +15,4 @@ var Flights = Backbone.Collection.extend({
   },
 });
 
-app.FlightList = new Flights();
+// app.FlightCollection = new Flights();
