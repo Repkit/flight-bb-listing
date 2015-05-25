@@ -8,11 +8,20 @@ var app = app || {};
 
 // var Flights = Backbone.Collection.extend({
 app.FlightCollection = Backbone.Collection.extend({
-  model: app.Flight,
-  url: 'api/flights.json',
-  parse: function(response){
-    return response;
-  },
+  model         : app.Flight,
+  url           : 'api/flights.json',
+  links         : null,
+  page_count    : null,
+  page_size     : null,
+  total_items   : null,
+  parse: function(response, options){
+    // console.info(response);
+    this.links = response._links;
+    this.page_count = response.page_count;
+    this.page_size = response.page_size;
+    this.total_items = response.total_items;
+    return response._embedded.flights;
+  }
 });
 
 // app.FlightCollection = new Flights();

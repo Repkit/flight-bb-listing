@@ -29,9 +29,11 @@ var TemplateManager = {
             // pre-compile a template, it returns a function that we can store in our
             // cache for future use.
             //var tmp = Handlebars.compile(template); //handlebars compiler
-            var tmp = Mustache.compile(template);  // mustache compiler
-            that.templates[id] = tmp;
-            callback(tmp);
+            var tmp = Mustache.parse(template);  // mustache compiler
+            // that.templates[id] = tmp;
+            // callback(tmp);
+            that.templates[id] = template;
+            callback(template);
         });
     }
 };

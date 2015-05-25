@@ -18,14 +18,15 @@ app.FlightView = Backbone.View.extend({
       };
     };
     return {
-      date: date, formatDate:formatDate
+      formatDate:formatDate
     };
         },
   render      : function(){
     var self = this;
     TemplateManager.get(this.template, function(template){
       // var html = $(template).tmpl();
-      var html = template(self.prepareJSON());
+      // var html = template(self.prepareJSON());
+      var html = Mustache.render(template,self.prepareJSON());
       // $(self.explorerDiv).append(html);
       self.$el.html(html);
     });
