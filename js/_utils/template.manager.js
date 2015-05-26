@@ -54,7 +54,7 @@ var TemplateManager = {
             self    = this;
             
         promise.done(function (template) {
-            console.log(template);
+            // console.log(template);
             self.templates = _.merge(self.templates, template, function(a, b) {
                 if (_.isArray(a)) {
                     return a.concat(b);
