@@ -9,4 +9,5 @@ var app = app || {};
 
 $(function(){
   new app.FlightsView();
+  new app.SidebarView();
 });

@@ -7,8 +7,8 @@ var app = app || {};
 // Our flight element view
 
 app.FlightView = Backbone.View.extend({
-  tagName     : 'div',
-  className   : 'flight-listing-item row-fluid no-stack',
+  tagName     : 'section',
+  className   : 'col-md-12 mb30',
   template    : 'flight',
   prepareJSON : function() {
     // var date = moment(firstsegment.Origin.Date,'YYYY-MM-DD').format("DD.MM.YYYY");

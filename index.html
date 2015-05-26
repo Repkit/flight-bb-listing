@@ -6,10 +6,10 @@
   <title>Backbone flight list</title>
   
   <!--vendor styles-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" type="text/css" />
   
   <!--app styles-->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/style.css">
   
 </head>
@@ -21,9 +21,26 @@
   </header>
   
   <!--content-->
-  <div id="container" class="container-fluid">
-    content here
-    <div id="FlightItemsList"></div>
+  <div class="content">
+    <div id="Container" class="container">
+      <div id="MainContent" class="row">
+        <!--sidebar-->
+        <div id="SideBar" class="col-md-3 hidden-xs"></div>
+        
+        <!--content-->
+        <div id="FlightContent" class="col-md-9">
+          <div class="row">
+            <div class="flight-content-inner ml25">
+              <p style=" background: #EFEEEF;line-height: 32px;height: 32px;padding-left: 15px; font-weight: bold; ">Select a flight</p>
+              <!--flight list-->
+              <div id="FlightList" class=""></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
   </div>
   
   <!--footer-->
@@ -38,7 +55,7 @@
   <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>-->
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.0/backbone-min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
   <script type="text/javascript" src="vendor/js/TrafficCop.min.js"></script>
   
@@ -49,6 +66,7 @@
   <script type="text/javascript" src="js/view/loader.js"></script>
   <script type="text/javascript" src="js/view/flight.js"></script>
   <script type="text/javascript" src="js/view/flights.js"></script>
+  <script type="text/javascript" src="js/view/sidebar.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
     

@@ -6,9 +6,9 @@ var app = app || {};
 // Our flights view list
 
 app.FlightsView = Backbone.View.extend({
-  container     : '#FlightItemsList',
+  container     : '#FlightList',
   tagName       : 'div',
-  className     : 'flight-listing-list',
+  // className     : 'flight-listing-list',
   template      : 'flights',
   
   initialize    : function(initialFligths){
