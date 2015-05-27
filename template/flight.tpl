@@ -79,12 +79,12 @@
                                     <i class="fa fa-plane plane-icon hidden-xs hidden-sm"></i>
                                 </td>
                                 <td class="text-left">
-                                    <span>{{#_fn_.time}}{{flight.ReturnRoute.firstSegment.Origin.Time}}{{/_fn_.time}} - {{flight.ReturnRoute.firstSegment.Origin.Airport.City}}</span>
+                                    <span>14:45 - Kuwait</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="text-left">
-                                    <span>{{#_fn_.date}}{{flight.ReturnRoute.firstSegment.Origin.Date}}{{/_fn_.date}}</span>
+                                    <span>05.04.2015</span>
                                 </td>
                             </tr>
                         </tbody></table>
@@ -93,12 +93,12 @@
                         <table class="flight-from-item col-md-12">
                             <tbody><tr>
                                 <td class="text-left">
-                                    <span>{{#_fn_.time}}{{flight.ReturnRoute.lastSegment.Destination.Time}}{{/_fn_.time}} - {{flight.ReturnRoute.lastSegment.Destination.Airport.City}}</span>
+                                    <span>14:45 - Kuwait</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="text-left">
-                                    <span>{{#_fn_.date}}{{flight.ReturnRoute.lastSegment.Destination.Date}}{{/_fn_.date}}</span>
+                                    <span>05.04.2015</span>
                                 </td>
                             </tr>
                         </tbody></table>
@@ -107,17 +107,159 @@
                         <table class="flight-from-item col-md-12">
                             <tbody><tr>
                                 <td class="text-left">
-                                    <span>{{flight.ReturnRoute.Duration}}</span>
+                                    <span>2h 00m</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="text-left">
-                                    <span>{{#flight.ReturnRoute.stops}}{{flight.ReturnRoute.stops}} escale{{/flight.ReturnRoute.stops}}{{^flight.ReturnRoute.stops}}direct{{/flight.ReturnRoute.stops}}</span>
+                                    <span>direct</span>
                                 </td>
                             </tr>
                         </tbody></table>
                     </div>
                 </div>
+                <div class="col-md-12 extended flight-summary">
+                    <div class="col-md-5 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td width="30%" valign="middle" class="hidden-xs hidden-sm" rowspan="2">
+                                    <i class="fa fa-plane plane-icon hidden-xs hidden-sm"></i>
+                                </td>
+                                <td class="text-left">
+                                    <span>14:45 - Kuwait</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>05.04.2015</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="col-md-5 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td class="text-left">
+                                    <span>14:45 - Kuwait</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>05.04.2015</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td class="text-left">
+                                    <span>2h 00m</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>direct</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+                <div class="col-md-12 extended flight-summary">
+                    <div class="col-md-5 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td width="30%" valign="middle" class="hidden-xs hidden-sm" rowspan="2">
+                                    <i class="fa fa-plane plane-icon hidden-xs hidden-sm"></i>
+                                </td>
+                                <td class="text-left">
+                                    <span>14:45 - Kuwait</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>05.04.2015</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="col-md-5 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td class="text-left">
+                                    <span>14:45 - Kuwait</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>05.04.2015</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td class="text-left">
+                                    <span>2h 00m</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>direct</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+                <div class="col-md-12 extended flight-summary">
+                    <div class="col-md-5 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td width="30%" valign="middle" class="hidden-xs hidden-sm" rowspan="2">
+                                    <i class="fa fa-plane plane-icon hidden-xs hidden-sm"></i>
+                                </td>
+                                <td class="text-left">
+                                    <span>14:45 - Kuwait</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>05.04.2015</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="col-md-5 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td class="text-left">
+                                    <span>14:45 - Kuwait</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>05.04.2015</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <table class="flight-from-item col-md-12">
+                            <tbody><tr>
+                                <td class="text-left">
+                                    <span>2h 00m</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">
+                                    <span>direct</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-3 col-sm-2 col-xs-12 hidden-xs">
                 <h3 class="flight-price text-center">546.61 <small>KWD</small></h3>
                 <button class="btn orange-btn col-md-12 col-sm-12">SELECT</button>
