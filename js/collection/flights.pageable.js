@@ -7,7 +7,7 @@ var app = app || {};
 // Our flights collection
 
 // var Flights = Backbone.Collection.extend({
-app.FlightCollection = Backbone.Collection.extend({
+app.FlightCollection = Backbone.PageableCollection.extend({
   model         : app.Flight,
   url           : 'api/flights.php',
   links         : null,
@@ -21,6 +21,10 @@ app.FlightCollection = Backbone.Collection.extend({
     this.page_size = response.page_size;
     this.total_items = response.total_items;
     return response._embedded.flights;
+  },
+  state : {
+    pageSize : 5,
+    totalRecords : 25
   }
 });
 

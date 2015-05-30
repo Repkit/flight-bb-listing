@@ -20,7 +20,7 @@
         </header>
         <section class="flight-body">
             <div class="col-md-2 col-sm-2 hidden-xs">
-                <img width="100%" alt="{{flight.DepartureRoute.airline.name}}" class="mt15" src="{{#_fn_.airImg}}{{flight.DepartureRoute.airline.code}}{{/_fn_.airImg}}">
+                <!--<img width="100%" alt="{{flight.DepartureRoute.airline.name}}" class="mt15" src="{{#_fn_.airImg}}{{flight.DepartureRoute.airline.code}}{{/_fn_.airImg}}">-->
             </div>
             <div class="col-md-7 col-sm-8 col-xs-12 extended-sm">
                 
@@ -318,7 +318,7 @@
                                     <span class="text-big">Economy<!--<span-->
                                 </span></div>
                                 <div class="col-xs-6 col-sm-2 col-md-2 col-md-pull-1 extended-md">
-                                    <img width="100%" alt="Flight logo" class="airline-img" src="../../assets/img/airlines/adac.png">
+                                    <!-- <img width="100%" alt="Flight logo" class="airline-img" src="../../assets/img/airlines/adac.png"> -->
                                 </div>
                                 <div class="col-md-8 col-xs-12 col-sm-8 col-md-offset-1">
                                     <div class="row segment-detail">
@@ -361,7 +361,7 @@
                                     <span class="text-big">Economy<!--<span-->
                                 </span></div>
                                 <div class="col-xs-6 col-sm-2 col-md-2 col-md-pull-1 extended-md">
-                                    <img width="100%" alt="Flight logo" class="airline-img" src="../../assets/img/airlines/adac.png">
+                                    <!-- <img width="100%" alt="Flight logo" class="airline-img" src="../../assets/img/airlines/adac.png"> -->
                                 </div>
                                 <div class="col-md-8 col-xs-12 col-sm-8 col-md-offset-1">
                                     <div class="row segment-detail">

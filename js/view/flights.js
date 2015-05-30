@@ -13,9 +13,35 @@ app.FlightsView = Backbone.View.extend({
   
   initialize    : function(initialFligths){
     this.collection = new app.FlightCollection(initialFligths);
-    this.collection.fetch({reset : true});
+    this.collection.fetch({
+        reset   : true, 
+        headers : {'Accept' : 'application/vnd.flights.v2+json'},
+        data    : {code : 'flights-code'}
+    });
     // listeners
     this.listenTo(this.collection, 'reset', this.render, this);
+    // $(window).on("scroll",this.scroll);
+    var self = this;
+    $(window).on("scroll",function( ev ){ self.scroll(ev, self); });
+  },
+  
+  //we need to remove window listener on view remove THIS SEEMS HACKY
+  remove: function(){
+    $(window).off("scroll",this.scroll);
+    //call the superclass remove method
+    Backbone.View.prototype.remove.apply(this, arguments);
+  },
+  
+  
+  scroll : function(ev, self){
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      this.collection.getNextPage({
+        reset : true ,
+        remove: false ,
+        headers : {'Accept' : 'application/vnd.flights.v2+json'} ,
+        data    : {code : 'flights-code'}
+      });
+    }
   },
   
   prepareJSON   : function(){

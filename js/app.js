@@ -16,4 +16,10 @@ $(function(){
   // });
   new app.FlightsView();
   new app.SidebarView();
+  
+  // $(window).scroll(function() {
+  //   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+  //       alert("bottom!");
+  //   }
+  // });
 });
