@@ -16,6 +16,18 @@ app.SidebarView = Backbone.View.extend({
     this.render();
   },
   
+  events : {
+    "click input[type='checkbox']" : "applyFilter",
+  },
+  
+  applyFilter : function(ev){
+    // console.log('applyFilter sidebar');
+    var element = $(ev.target);
+    var filter = {};
+    filter[element.attr('name')] = element.val();
+    app.mediator.trigger('applyFilter', filter );
+  },
+  
   serialize       : function(){
     return {};
   },

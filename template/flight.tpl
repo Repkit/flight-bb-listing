@@ -261,7 +261,7 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-2 col-xs-12 hidden-xs">
-                <h3 class="flight-price text-center">546.61 <small>KWD</small></h3>
+                <h3 class="flight-price text-center">{{flight.Price}} <small>KWD</small></h3>
                 <button class="btn orange-btn col-md-12 col-sm-12">SELECT</button>
             </div>
             

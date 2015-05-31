@@ -682,6 +682,6 @@ body > footer {
     margin-left: 0 !important;
 }
 #SideBar {
-    display: none;
+    /*display: none;*/
 }
 }

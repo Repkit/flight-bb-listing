@@ -14,7 +14,7 @@ app.FlightView = Backbone.View.extend({
   prepareJSON : function() {
     
     // variables
-    console.log(this.model.toJSON());
+    // console.log(this.model.toJSON());
     var flight = this.model.toJSON();
     
     // segments

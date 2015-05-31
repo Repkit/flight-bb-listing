@@ -6,10 +6,30 @@ var app = app || {};
 // Our flights view list
 
 app.FlightsView = Backbone.View.extend({
-  el            : '#FlightList',
+  container     : '#FlightList',
+  tagName       : 'div',
+  // className     : 'flight-listing-list',
   template      : 'flights',
   
   initialize    : function(initialFligths){
+    
+    if(initialFligths){
+      this.collection = new app.FlightCollection(initialFligths._embedded.flights);
+      // this.collection.add(initialFligths._embedded.flights);
+      this.render();
+    }
+    
+    if(!initialFligths){
+      this.collection = new app.FlightCollection();
+      
+      this.collection.fetch({
+          reset   : true, 
+          headers : {'Accept' : 'application/vnd.flights.v2+json'},
+          data    : {code : 'flights-code'}
+      });
+    }
+    
+    // console.log(this.collection);
     
     // listeners
     this.listenTo(this.collection, 'reset', this.render, this);
@@ -17,8 +37,27 @@ app.FlightsView = Backbone.View.extend({
     var self = this;
     $(window).on("scroll",function( ev ){ self.scroll(ev, self); });
     
+    app.mediator.on('applyFilter',this.applyFilter,this);
   },
   
+  applyFilter : function(filters) {
+    // console.log(filters);
+    var filtered = _.filter(this.collection.fullCollection.models, function(model){
+      // console.log(model);
+      return model.get('Price') > filters['filter[price][]'];
+    });
+    
+    // console.log(filtered);
+    _.forEach(filtered, function(item){
+      console.log(item.get('Price'));
+    });
+    var list = {};
+    list._embedded = {};
+    list._embedded.flights = filtered;
+    // console.log(list);
+    
+    new app.FlightsView(list);
+  },
   
   //we need to remove window listener on view remove THIS SEEMS HACKY
   remove: function(){
@@ -50,6 +89,8 @@ app.FlightsView = Backbone.View.extend({
     this.collection.each(function(flight){
       this.renderFlight(flight);
     },this);
+    
+    $(this.container).html(this.el);
     
     return this;
   },
